@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="scripts.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<style>
+		form{
+			padding: 100px 50px 100px 50px;
+			margin: 0 5% 0 0;
+			font-size: 20px;
+			text-align: left;
+		}
+
+
+		input{
+			padding: 5px 50px 5px 50px;
+			font-size: 18px;
+		}
+
+		textarea{
+			font-size: 18px;
+		}
+
+		input[type=button]{
+			color: white;
+			border-radius: 10px;
+			border: none;
+			background-color: rgb(38, 66, 109);
+		}
+
+		input:hover{
+			background-color: rgb(209, 209, 209);
+		}
+
+		textarea:hover{
+			background-color: rgb(209, 209, 209);
+		}
+
+
+		input[type=button]:hover{
+			background-color: rgb(17, 38, 71);
+		}
+
+		input:focus{
+			background-color: rgb(255, 255, 255);
+			outline: none;
+		}
+
+		textarea:focus{
+			background-color: rgb(255, 255, 255);
+			outline: none;
+		}
+
+
+		input[type=button]:active{
+			background-color: rgb(21, 28, 40)
+		}
+
+		a{
+			text-decoration: none;
+		}
+
+		#to-flex{
+			display: flex;
+			justify-content: space-around;
+		}
+
+		#phone {
+			margin-top: 8%;
+			height:465px;
+			width:300px;
+			background-image: url("images/samsung-phone.png");
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+	</style>
+
+</head>
+<body>
+
+<div id="navbar">
+	<ul>
+		<a href="index.html"><li>Home</li></a>
+		<a href="images.html"><li> Gear VR</li></a>
+		<a href="about.html"><li>About the Company</li></a>
+		<a href="contact-form.html"><li>Contact Us</li></a>
+		
+	</ul></div>
+<div id="to-flex">	
+<form>
+	<h1>Contact Us!</h1>
+	First &amp; Last Name:<br>
+	<input type="text"><br>
+	Email Address:<br>
+	<input type="email" name="email"><br>
+	Message:<br>
+	<textarea rows="5" cols="80"></textarea><br>
+	Would you like to recieve more exciting updates about Lorem Ipsum Enterprises?<br>
+	<input type="radio" name="offers" value="yes">
+	Yes
+		<br>
+	<input type="radio" name="offers" value="no">
+	No
+	<br>
+	<a href="submission.html"><input type="button" name="submit" value="submit"></a>
+</form>
+	<div id="phone">
+	
+	</div>
+</div>
+
+
+
+</body>
+</html>

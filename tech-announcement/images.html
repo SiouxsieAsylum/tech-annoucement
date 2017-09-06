@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get the Specs</title>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	
+
+	<style>
+
+		body{
+			background-image: url("images/white-kid-with-vr.png");
+			background-position: center;
+			background-size: 75%;
+			background-repeat: no-repeat;
+
+		}
+
+		#body-wrapper {
+			height: 100%;
+			width: 100%;
+		}
+
+		.mySlides {
+			height:300px;
+			width:500px;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		#first{
+			background-color: red;
+			background-image: url("images/specs.png");
+		}
+		#second{
+			background-color: blue;
+			background-image: url("images/lady-with-headphones.jpg");
+		}
+		#third{
+			background-color: green;
+			background-image: url("images/vr-remote-control.jpg");
+		}
+		#fourth{
+			background-color: purple;
+			background-image: url("images/medical-professional-vr.png");
+		}
+		#fifth{
+			background-color: gold;
+			background-image: url("images/sunset-background.jpg");
+		}
+
+		.modalDialog {
+
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: rgba(0,0,0,0.8);
+		z-index: 99999;
+		opacity: 0;
+		transition: opacity 300ms ease-in;
+		-webkit-transition: opacity 300ms ease-in;
+		-moz-transition: opacity 300ms ease-in;
+		pointer-events: none;
+	}
+/*modal launch*/
+	.modalDialog:target {
+		opacity: 1;
+		pointer-events: auto;
+	}
+/*video formatting*/
+	.modalDialog > div {	
+		height: 100%;
+		width: 100%;
+		position: relative;
+		/*background-color: black;*/
+	}
+/*modal close button*/
+	.close {
+		color: white;
+		line-height: 10px;
+		text-align: center;
+		font-weight: bold;
+		text-decoration: none;
+	}
+/*hover for modal close button*/
+	.close:hover {
+		background-color: #2c2f35;
+	}
+
+	#formatting {
+		margin-top: 10%;
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+		
+	}
+
+	#link {
+		display: inline-block;
+		font-size: 60px;
+		margin-top: 10%;
+	}
+
+	#text{
+		float:left;
+		margin: 5% 20% 0 20%;
+		padding: 20px;
+		background-color: rgba(0,0,0,0.8);
+		color: white;
+		font-size: 20px;
+
+	}
+
+	.content {
+		height: 550px;
+		width: 400px;
+		margin-top:3%;
+		margin-left: 5%
+	}
+
+	a {
+		color: rgb(34, 34, 35);
+		text-align: center;
+	}
+
+	/*#modal-play{
+		
+		font-size: 30px;
+		font-weight: bolder;
+		color: rgb(34, 34, 35);
+	}*/
+
+	/*img{
+		z-index: -1;
+		position: relative;
+		margin-top: 5%;
+		margin-left: 5%;
+		height:370px;
+		width:447px;
+		padding: 0;
+	}*/
+
+	</style>
+
+</head>
+<body>
+
+<div id="navbar">
+	<ul>
+		<a href="index.html"><li>Home</li></a>
+		<a href="images.html"><li> Gear VR</li></a>
+		<a href="about.html"><li>About the Company</li></a>
+		<a href="contact-form.html"><li>Contact Us</li></a>
+		
+	</ul>
+</div>
+
+
+
+
+<!-- get the text of the modal launcher centered
+replace the colors with images
+maybe get the descriptor text up higher on the page-->
+
+
+
+
+<div id="modal-play"><a href="#slideshow"><div class = "content">
+	<p>The new Gear VR headset works with the Galaxy S8 Plus, S8, S7, S7 Edge, Note5, S6, S6 Edge and S6 Edge+ and comes with Micro USB and USB-C adapters.The larger Gear VR, while bulkier and more plastic, fits better on most faces.
+The Gear VR still works with wired headphones, leaving the headphone jack space on the phone unobstructed. But it's arguably better to use wireless headphones to reduce the cable tangle.
+
+To be clear, this isn't the same high-end VR hardware as the HTC Vive or Oculus Rift. Those are more-advanced pieces of tech that also require a cutting-edge PC.
+
+Click anywhere on this text to see specs and features.
+	</p>
+</div></a></div>
+
+
+
+  <div id="slideshow" class="modalDialog">
+	<a href="#close" title="Close" class="close">X</a>
+      <div>
+      <div id="formatting">
+      	<div id="link"><a class="backbutton" onclick="plusDivs(-1)">&#10094;</a></div>
+      	<br>
+		<div class="mySlides" id="first"></div>
+		<div class="mySlides" id="second"></div>
+		<div class="mySlides" id="third"></div>
+		<div class="mySlides" id="fourth"></div>
+		<div class="mySlides" id="fifth"></div>
+		<br>
+	<div id = "link"><a class="backbutton" onclick="plusDivs(-1)">&#10095;</a></div>
+	</div>
+	<div id="text"></div>
+  </div>
+
+
+
+</div>
+
+<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

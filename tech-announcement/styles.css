@@ -1,0 +1,83 @@
+#navbar {
+	margin-top: -30px;
+	text-align: center;
+	width: 105%;
+	position: fixed;
+	top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul{
+	background-color:rgba(38, 66, 109, 0.8);
+	list-style-type: none;
+	font-size: 25px;
+
+}
+
+
+
+li {
+	padding: 5px 10px 0 10px;
+	margin-left: 30px;
+	color: white;
+	display: inline;
+}
+
+#navbar li:hover {
+	background-color:rgba(118, 163, 232, 0.8);
+}
+
+body {
+	margin: 0;
+	background-color: rgb(169, 193, 232);
+}
+
+
+.content {
+	position: relative;
+	z-index: 1;
+	/*height: 100%;*/
+	margin: 100px 0 100px 0;
+	padding: 10px 15px 10px 15px;
+	background-color: rgba(255,255,255,0.8);
+	font-size: 25px;
+	box-shadow: inset 1px 2px 2px rgb(206, 215, 229), 2px 3px 3px rgb(122, 158, 214);
+}
+
+.background-photos {
+	top:0;
+	width: 110%;
+	overflow-x: hidden;
+	margin: 0;
+	height: 33em;
+	background-position: center;
+	background-size: 75%;
+	background-repeat: no-repeat;
+}
+
+#first-photo {
+background-image: url("images/vr-rear-view.png");
+	z-index: 1;
+}
+
+#second-photo {
+	background-image: url("images/lady-with-headphones.jpg");
+	/*margin-top: 33em;*/
+}
+
+#third-photo {
+	/*background-color: green;*/
+	background-image: url("images/vr-plus-remote-control.png");
+}
+
+.reviewers {
+	float: right;
+	font-size: 30px;
+	margin: 20px 50px 0 0 ;
+}
+.quotes {
+	font-size: 50px;
+}
